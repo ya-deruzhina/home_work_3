@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 from dotenv import load_dotenv
 import os
+from flask import Flask, request
+import psycopg2
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

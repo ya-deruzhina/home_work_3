@@ -1,4 +1,6 @@
 from django.db import models
+from flask import Flask, request
+import psycopg2
 
 # Create your models here.
 class Post (models.Model):
