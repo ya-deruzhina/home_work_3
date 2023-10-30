@@ -1,0 +1,7 @@
+{% extends 'post_and_comments/header.html' %}
+
+{% block content %}
+    {% for post in posts %}
+    <li> <a href="/posts/all/{{ post.id }}/"> {{ post.title }} </a> </li>
+    {% endfor %} 
+{% endblock %}

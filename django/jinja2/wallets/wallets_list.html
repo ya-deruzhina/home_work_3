@@ -1,0 +1,7 @@
+{% extends 'wallets/header.html' %}
+
+{% block content %}
+    {% for wallet in wallets %}
+    <li> <a href="/posts/wallets/{{ wallet.id }}"> {{ wallet.name }} </a> </li>
+    {% endfor %} 
+{% endblock %}
