@@ -1,0 +1,41 @@
+{% extends 'post_and_comments/header.html' %}
+
+{% block content %}
+<li> <p>
+    Post - {{ post.title }}
+</p>
+<p>    
+   Text - {{ post.text }}    
+</p> 
+<p>
+    Counter - {{ post.counter}}
+</p>
+<p>
+    Category - {{ post.category }}
+</p>
+<p>
+    Date_create - {{ post.date_create}}
+</p>
+</li>
+<p>
+    <a href="/posts/">All posts</a>
+</p>
+<p>
+    <a href="/posts/{{ post.id }}/comments/">View all comments for post</a>
+</p>
+<p>
+    <a href="/posts/{{ post.id }}/create_comment/">Create New Comments for post</a>
+</p>
+<p>
+    <fieldset>
+        <a href="/posts/{{ post.id }}/update/">Update post</a>
+    </fieldset>
+</p>
+<p>
+    <fieldset>
+        <a href="/posts/{{ post.id }}/delete/">Delete post</a>
+    </fieldset>
+</p>
+
+
+{% endblock %}

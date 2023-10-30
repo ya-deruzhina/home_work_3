@@ -1,0 +1,22 @@
+{% extends 'post_and_comments/header.html' %}
+
+{% block content %}
+    <form action="/posts/{{ post_id }}/comment/create/" method="post">
+        <fieldset>
+            <div>
+                <label>Text</label>
+                <input type="text" name="text">
+            </div>
+            <div>
+                <label>Status</label>
+                <input type="text" name="status">
+            </div>
+              
+        </fieldset>
+        <button type="submit">Create</button>
+    </form> 
+
+    <p>
+        <a href="/posts/">Back to All Posts</a>
+    </p>
+{% endblock %}

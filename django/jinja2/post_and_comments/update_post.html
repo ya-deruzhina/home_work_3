@@ -1,0 +1,21 @@
+{% extends 'post_and_comments/header.html' %}
+
+{% block content %}
+    <form action="/posts/{{post_id}}/" method="post">
+        <fieldset>
+            <div>
+                <label>Title</label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label>Text</label>
+                <input type="text" name="text">
+            </div>
+            <div>
+                <label>Counter</label>
+                <input type="int" name="counter">
+            </div>
+            </fieldset>
+        <button type="submit">Update</button>
+    </form> 
+{% endblock %}
