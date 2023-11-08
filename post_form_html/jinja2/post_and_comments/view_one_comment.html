@@ -1,0 +1,26 @@
+{% extends 'post_and_comments/header.html' %}
+
+{% block content %}
+<li> <p>
+    ID - {{ comment.id }}
+</p>
+<p>    
+   Text - {{ comment.text }}    
+</p> 
+<p>
+    With Post - {{ comment.new_id}}
+</p>
+<p>
+    Status - {{ comment.status }}
+</p>
+</li>
+<p>
+    <a href="/post_forms_html/">All posts</a>
+</p>
+<p>
+    <fieldset>
+        <a href="/post_forms_html/comment/{{ comment.id }}/delete/">Delete comment</a>
+    </fieldset>
+</p>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'post_and_comments/header.html' %}
+
+{% block content %}
+    
+<form action="/post_forms_html/{{ post_id }}/comment/create/" method="post">
+    {{ form }}
+    <button type="submit">Добавить</button>
+</form> 
+
+
+    <p>
+        <a href="/post_forms_html/">Back to All Posts</a>
+    </p>
+{% endblock %}
