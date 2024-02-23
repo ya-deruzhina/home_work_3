@@ -1,0 +1,10 @@
+{% extends 'wallets/header.html' %}
+
+{% block content %}
+<p>
+    {{wallet.name}}
+</p>
+<p>
+    For wallet {{ wallet.name }} with currency {{ wallet.currency }} balance is {{ wallet.balance }}    
+</p> 
+{% endblock %}
